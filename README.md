@@ -15,12 +15,29 @@ npm install --save use-chiev
 ```jsx
 import React, { Component } from 'react'
 
-import { useMyHook } from 'use-chiev'
+  const { clones, getURI, numTokenOfGen0 } = useChievHook();
+  useEffect(() => {
+    const getOnChainData = async () => {
+      const count = await numTokenOfGen0(
+        "<eth address>",
+        1
+      );
+      const uri = await getURI(1);
+
+    };
+    getOnChainData();
+    // eslint-disable-next-line
+  }, []);
 
 const Example = () => {
   const example = useMyHook()
   return (
-    <div>{example}</div>
+      <div>
+      <h1>Chive Token Hook</h1>
+      <p>clones.usersTokens has a lits of NFT owners and the tokens they own</p>
+      <p>getURI will return the meta data uri from any token</p>
+      <p>getURI will return the meta data uri from any token</p>
+      </div>
   )
 }
 ```
