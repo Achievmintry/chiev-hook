@@ -1,6 +1,6 @@
 {
-  "name": "use-chiev",
-  "version": "1.0.0",
+  "name": "use-chiev-nft",
+  "version": "0.0.1",
   "description": "use chiev nft info",
   "author": "dekanbro",
   "license": "MIT",
@@ -66,5 +66,8 @@
     "rollup-plugin-node-resolve": "^4.0.0",
     "rollup-plugin-peer-deps-external": "^2.2.0",
     "rollup-plugin-url": "^2.1.0"
+  },
+  "dependencies": {
+    "@rollup/plugin-json": "^4.1.0"
   }
 }
