@@ -2,19 +2,21 @@
 
 > use chiev nft info
 
-[![NPM](https://img.shields.io/npm/v/use-chiev.svg)](https://www.npmjs.com/package/use-chiev) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
+[![NPM](https://img.shields.io/npm/v/use-chiev.svg)](https://www.npmjs.com/package/@raidguild/use-chiev) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
 ## Install
 
 ```bash
-npm install --save use-chiev
+yarn add @raidguild/use-chiev
 ```
 
 ## Usage
 
 ```jsx
 import React, { Component } from 'react'
+import { useChievHook } from '@raidguild/use-chiev';
 
+const Example = () => {
   const { clones, getURI, numTokenOfGen0 } = useChievHook();
   useEffect(() => {
     const getOnChainData = async () => {
@@ -29,8 +31,6 @@ import React, { Component } from 'react'
     // eslint-disable-next-line
   }, []);
 
-const Example = () => {
-  const example = useChievHook()
   return (
       <div>
       <h1>Chiev Token Hook</h1>
