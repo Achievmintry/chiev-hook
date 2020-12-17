@@ -1,10 +1,13 @@
 {
-  "name": "use-chiev-nft",
+  "name": "@raidguild/use-chiev",
   "version": "0.0.1",
   "description": "use chiev nft info",
   "author": "dekanbro",
   "license": "MIT",
-  "repository": "Achievmintry/chiev-hook",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Achievmintry/chiev-hook.git"
+  },
   "main": "dist/index.js",
   "module": "dist/index.es.js",
   "jsnext:main": "dist/index.es.js",
@@ -69,5 +72,17 @@
   },
   "dependencies": {
     "@rollup/plugin-json": "^4.1.0"
-  }
+  },
+  "bugs": {
+    "url": "https://github.com/Achievmintry/chiev-hook/issues"
+  },
+  "homepage": "https://github.com/Achievmintry/chiev-hook#readme",
+  "directories": {
+    "example": "example"
+  },
+  "keywords": [
+    "xdai",
+    "nft",
+    "ethereum"
+  ]
 }

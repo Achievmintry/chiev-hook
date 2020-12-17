@@ -22,8 +22,6 @@ export const useChievHook = () => {
   React.useEffect(() => {
     const getChievs = async (service) => {
       const tokenData = await service.getLogs();
-      // counter++
-      console.log("tokenData", tokenData);
       setState({ ...tokenData });
     };
 
@@ -31,7 +29,6 @@ export const useChievHook = () => {
 
     // polling every 10 min?
     let interval = window.setInterval(() => {
-      console.log("example state", clones);
       getChievs(chievsService);
     }, 600000);
     return () => {
